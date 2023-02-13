@@ -9,6 +9,11 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+	document.querySelector("#contactForm").addEventListener("submit", function(e) {
+		e.preventDefault();
+		document.querySelector("#submitSuccessMessage").setAttribute("style", "display:block!important;");
+	});
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
